@@ -4,7 +4,7 @@ Tasker is a minimal, responsive Todo List application built with React and Tailw
 
 ## Screenshot
 
-![Tasker app screenshot](./screenshot.png)
+![Tasker app screenshot](./screenshots/screenshot.png)
 
 ## Features
 
