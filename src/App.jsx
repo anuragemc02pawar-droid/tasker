@@ -105,7 +105,7 @@ function App() {
             value={todo} className="bg-white py-1 px-5 w-full border-1 rounded-xl " type="text"/>          
             <button onClick={handleAdd} className='bg-pink-600 hover:bg-pink-700 p-3 hover:cursor-pointer py-1 text-white rounded-md text-sm font-bold mb-1'>Save</button> 
         </div>
-        <input onChange={toggleFinished} type="checkbox" checked={showFinished} />Show Finished Tasks
+        <input onChange={toggleFinished} type="checkbox" checked={showFinished} className='cursor-pointer'/>Show Finished Tasks
         <h2 className='text-lg font-bold mt-5'>Your Todos</h2>
         <div className="todos">
           {todos.length === 0 && <div className='m-5'>Start adding your tasks!</div>}
@@ -113,7 +113,7 @@ function App() {
 
             return (showFinished || !item.isCompleted) && <div key={item.id} className="todo flex  justify-between items-center">
               <div className='flex gap-5'>
-                <input name={item.id} onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} id="" />
+                <input name={item.id} onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} className='cursor-pointer' id="" />
                 <div className={item.isCompleted ? "line-through" : ""}>{item.todo}</div>
               </div>
               <div className="buttons my-2 flex h-full">
