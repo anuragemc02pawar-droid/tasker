@@ -106,7 +106,7 @@ function App() {
             <button onClick={handleAdd} className='bg-pink-600 hover:bg-pink-700 p-3 hover:cursor-pointer py-1 text-white rounded-md text-sm font-bold mb-1'>Save</button> 
         </div>
         <input onChange={toggleFinished} type="checkbox" checked={showFinished} className='cursor-pointer'/>Show Finished Tasks
-        <h2 className='text-lg font-bold mt-5'>Your Todos</h2>
+        <h2 className='text-lg font-bold mt-5'>Your Tasks</h2>
         <div className="todos">
           {todos.length === 0 && <div className='m-5'>Start adding your tasks!</div>}
           {todos.map((item) => {
